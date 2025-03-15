@@ -4,6 +4,7 @@ def factorial(n):
     else:
         return n * factorial(n - 1)
 
+
 # Solicitar al usuario que ingrese un número
 numero = int(input("Ingresa un número para calcular su factorial: "))
 
