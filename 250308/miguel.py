@@ -19,7 +19,8 @@ def factorial(n):
         return resultado
 
 
-# Ejemplo de uso
-numero = 5
-resultado_factorial = factorial(numero)
-print(f"El factorial de {numero} es {resultado_factorial}")
+if __name__ == "__main__":
+    # Ejemplo de uso
+    numero = 5
+    resultado_factorial = factorial(numero)
+    print(f"El factorial de {numero} es {resultado_factorial}")
