@@ -1,0 +1,27 @@
+Métodos de ordenamiento
+
+1. Burbuja
+2. Inserción
+3. Selección
+4. CocktailSort
+5. Quicksort (ordenamiento rapido)
+6. Merge sort
+7. Heap sort
+8. Comb sort
+9. Radix sort
+10. Shell sort
+11. Random sort
+
+
+1. David Eduardo
+2. Diego Jesus
+3. Eliseo Rios
+4. Enrique Rodriguez
+5. Fermin Guerrero
+6. Gabriel Ernesto
+7. Hector Uriel
+8. Hugo Miguel
+9. Jesus Angel
+10. Jose Luis Cortez
+11. Nelson Riera
+9. Ricardo Adan Paz
