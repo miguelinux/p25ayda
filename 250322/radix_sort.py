@@ -15,6 +15,7 @@ los elementos de una lista de acuerdo a su representación en base a un dígito 
 from random import randint
 from time import time_ns as tiempo
 
+
 def counting_sort(lista, exp):
     """
     Función para ordenar numeros mediante un digito especifico (Requerida para radix_sort)
@@ -40,12 +41,11 @@ def counting_sort(lista, exp):
         lista[i] = output[i]
 
 
-
 def radix_sort(lista):
     """
     Función para ordenar una lista de numeros mediante el algoritmo de radix sort
-    
-    """	
+
+    """
     if not lista:
         return []
     lista_ordenada = lista.copy()
@@ -53,7 +53,7 @@ def radix_sort(lista):
     exp = 1
     while max_num // exp > 0:
         counting_sort(lista_ordenada, exp)
-        exp *= 10 
+        exp *= 10
     return lista_ordenada
 
 

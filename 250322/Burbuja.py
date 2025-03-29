@@ -8,25 +8,27 @@
 from random import randint
 from time import time_ns as tiempo
 
+
 def bubble_sort(arr):
     n = len(arr)
-    
+
     # Traverse through all array elements
     for i in range(n):
         # Last i elements are already sorted, so no need to check them
         swapped = False
-        
-        for j in range(0, n-i-1):
+
+        for j in range(0, n - i - 1):
             # Swap if the element found is greater than the next element
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
                 swapped = True
-        
+
         # If no two elements were swapped in the inner loop, then the array is already sorted
         if not swapped:
             break
-            
+
     return arr
+
 
 def main():
     """

@@ -14,17 +14,17 @@ def isSorted(lista):
     Helper function to check if a list is sorted in ascending order.
     Returns True if sorted, False otherwise.
     """
-    return all(lista[i] <= lista[i+1] for i in range(len(lista)-1))
+    return all(lista[i] <= lista[i + 1] for i in range(len(lista) - 1))
 
 
 def random_sort(lista):
     from random import shuffle
 
     lista_ordenada = lista.copy()
-    
+
     while not isSorted(lista_ordenada):
         shuffle(lista_ordenada)
-    
+
     return lista_ordenada
 
 
@@ -40,9 +40,9 @@ def main():
 
     print("Aleatorios:", aleatorios[0:5])
     print("Ordenados:", ordenados[0:5])
-    
+
     tiempo_transcurrido = (t_final - t_inicio) / 1e9
-    
+
     minutos = int(tiempo_transcurrido // 60)
     segundos = tiempo_transcurrido % 60
 
