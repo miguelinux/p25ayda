@@ -48,7 +48,7 @@ def radix_sort(lista):
     """
     if not lista:
         return []
-    lista_ordenada = lista.copy()
+    lista_ordenada = lista
     max_num = max(lista_ordenada)
     exp = 1
     while max_num // exp > 0:
@@ -62,9 +62,10 @@ def main():
     Función principal del programa
     """
     aleatorios = [randint(0, 10000) for _ in range(1000)]  # nosec B311
+    ordenados = aleatorios.copy()
 
     t_inicio = tiempo()
-    ordenados = radix_sort(aleatorios)
+    ordenados = radix_sort(ordenados)
     t_final = tiempo()
 
     print("Aleatorios:", aleatorios[0:15])

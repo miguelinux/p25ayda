@@ -41,7 +41,7 @@ def counting_sort(arr, exp):
 
 
 def radix_sort(lista):
-    lista_ordenada = lista.copy()  # Copia para no modificar la original
+    lista_ordenada = lista  # Copia para no modificar la original
     max_num = max(lista_ordenada)  # Encontramos el número más grande
     exp = 1  # Empezamos con el dígito menos significativo
 
@@ -56,12 +56,12 @@ def main():
     """
     Función principal del programa
     """
-    aleatorios = [
-        randint(0, 10000) for _ in range(10000)
-    ]  # Lista de 10,000 números aleatorios
+    # Lista de 10,000 números aleatorios
+    aleatorios = [randint(0, 10000) for _ in range(10000)]  # nosec B311
+    ordenados = aleatorios.copy()
 
     t_inicio = tiempo()
-    ordenados = radix_sort(aleatorios)
+    ordenados = radix_sort(ordenados)
     t_final = tiempo()
 
     print("Aleatorios:", aleatorios[0:15])

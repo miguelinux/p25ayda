@@ -37,9 +37,10 @@ def main():
     # 10000
     QTY = 10000
     aleatorios = [randint(0, QTY) for _ in range(QTY)]  # nosec B311
+    ordenados = aleatorios.copy()
 
     t_inicio = tiempo()
-    ordenados = bubble_sort(aleatorios.copy())
+    ordenados = bubble_sort(ordenados)
     t_final = tiempo()
 
     print("Aleatorios:", aleatorios[0:15])

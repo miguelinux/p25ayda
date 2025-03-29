@@ -16,7 +16,7 @@ from time import time as tiempo
 
 
 def CocktailSort(lista):
-    lista_ordenada = lista.copy()
+    lista_ordenada = lista
     change = True
     start = 0
     end = len(lista_ordenada) - 1
@@ -56,9 +56,10 @@ def main():
     # 10000
     QTY = 10000
     aleatorios = [randint(0, QTY) for _ in range(QTY)]  # nosec B311
+    ordenados = aleatorios.copy()
 
     t_inicio = tiempo()
-    ordenados = CocktailSort(aleatorios)
+    ordenados = CocktailSort(ordenados)
     t_final = tiempo()
 
     print("Aleatorios:", aleatorios[0:15])

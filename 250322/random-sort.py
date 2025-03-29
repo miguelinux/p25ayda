@@ -20,7 +20,7 @@ def isSorted(lista):
 def random_sort(lista):
     from random import shuffle
 
-    lista_ordenada = lista.copy()
+    lista_ordenada = lista
 
     while not isSorted(lista_ordenada):
         shuffle(lista_ordenada)
@@ -33,9 +33,10 @@ def main():
     Función principal del programa
     """
     aleatorios = [randint(0, 10000) for _ in range(11)]  # nosec B311
+    ordenados = aleatorios.copy()
 
     t_inicio = tiempo()
-    ordenados = random_sort(aleatorios)
+    ordenados = random_sort(ordenados)
     t_final = tiempo()
 
     print("Aleatorios:", aleatorios[0:5])

@@ -59,9 +59,10 @@ def main():
     Función principal del programa
     """
     aleatorios = [randint(0, 10000) for _ in range(10000)]  # nosec B311
+    ordenados = aleatorios.copy()
 
     t_inicio = tiempo()
-    ordenados = merge_sort(aleatorios)
+    ordenados = merge_sort(ordenados)
     t_final = tiempo()
 
     print("Aleatorios:", aleatorios[0:15])

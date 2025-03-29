@@ -36,7 +36,7 @@ def heapify(lista, n, i):
 
 
 def heap_sort(lista):
-    lista_ordenada = lista.copy()
+    lista_ordenada = lista
 
     n = len(lista_ordenada)
 
@@ -60,9 +60,10 @@ def main():
     Función principal del programa
     """
     aleatorios = [randint(0, 10000) for _ in range(10000)]  # nosec B311
+    ordenados = aleatorios.copy()
 
     t_inicio = tiempo()
-    ordenados = heap_sort(aleatorios)
+    ordenados = heap_sort(ordenados)
     t_final = tiempo()
 
     print("Aleatorios:", aleatorios[0:15])

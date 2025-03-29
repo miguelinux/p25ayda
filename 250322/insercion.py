@@ -14,7 +14,7 @@ from random import randint
 
 
 def insercion(lista):
-    lista2 = lista.copy()
+    lista2 = lista
     for i in range(1, len(lista2)):
         item = lista2[i]
         j = i - 1
@@ -30,9 +30,10 @@ def main():
     Función principal del programa
     """
     aleatorios = [randint(0, 10000) for _ in range(10000)]  # nosec B311
+    ordenados = aleatorios.copy()
 
     t_inicio = time.perf_counter()
-    ordenados = insercion(aleatorios)
+    ordenados = insercion(ordenados)
     t_final = time.perf_counter()
 
     print("Aleatorios:", aleatorios[0:15])

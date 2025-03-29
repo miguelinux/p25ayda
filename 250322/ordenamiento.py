@@ -16,9 +16,8 @@ from time import time_ns as tiempo
 
 
 def nombre_del_algoritmo(lista):
-    lista_ordenada = lista.copy()
-    lista_ordenada.sort()
-    return lista_ordenada
+    lista.sort()
+    return lista
 
 
 def main():
@@ -26,9 +25,10 @@ def main():
     Función principal del programa
     """
     aleatorios = [randint(0, 10000) for _ in range(10000)]  # nosec B311
+    ordenados = aleatorios.copy()
 
     t_inicio = tiempo()
-    ordenados = nombre_del_algoritmo(aleatorios)
+    ordenados = nombre_del_algoritmo(ordenados)
     t_final = tiempo()
 
     print("Aleatorios:", aleatorios[0:15])
