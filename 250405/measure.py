@@ -1,11 +1,28 @@
+import os
+import sys
 from random import randint
 from time import time as tiempo
 
-from heap_sort import heap_sort
-from merge_sort import merge_sort
-from radix_sort import radix_sort
-from random_sort import random_sort
-from selection_sort import sort_selection
+# Get the current script's directory
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Get the parent directory by going one level up
+parent_dir = os.path.dirname(current_dir)
+
+# Usando path absoluto
+algo_dir = os.path.join(parent_dir, "250322")
+
+# Usando path relativo
+# algo_dir = os.path.join("..","250322")
+
+# Add the parent directory to sys.path
+sys.path.append(algo_dir)
+
+from heap_sort import heap_sort  # noqa E402
+from merge_sort import merge_sort  # noqa E402
+from radix_sort import radix_sort  # noqa E402
+from random_sort import random_sort  # noqa E402
+from selection_sort_2 import selection_sort  # noqa E402
 
 
 QTY = 1_000_000
@@ -13,7 +30,7 @@ Sub_sets = [100, 1_000, 10_000, 100_000, 1_000_000]
 
 results = []
 # algorithms=[CocktailSort,insercion,bubble_sort]
-algorithms = [sort_selection, merge_sort, heap_sort, radix_sort, random_sort]
+algorithms = [selection_sort, merge_sort, heap_sort, radix_sort, random_sort]
 
 
 if __name__ == "__main__":
