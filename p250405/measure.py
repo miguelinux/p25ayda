@@ -1,12 +1,13 @@
 from random import randint
 from time import time as tiempo
 
-from heap_sort import heap_sort
-from merge_sort import merge_sort
-from radix_sort import radix_sort
-from random_sort import random_sort
-from selection_sort import sort_selection
+from p250322.heap_sort import heap_sort
+from p250322.merge_sort import merge_sort
+from p250322.radix_sort import radix_sort
+from p250322.random_sort import random_sort
+from p250322.selection_sort import sort_selection
 
+# Run with python -m p250405.measure
 
 QTY = 1_000_000
 Sub_sets = [100, 1_000, 10_000, 100_000, 1_000_000]
