@@ -12,7 +12,7 @@ llamado: <Shell sort>
 from random import randint
 from time import time_ns as tiempo
 
-# from time import time as tiempo
+
 
 
 def shell_sort(arr):
@@ -34,6 +34,7 @@ def shell_sort(arr):
         j -= gap
       arr[j] = temp
     gap //= 2  # Reduce el gap para la siguiente iteración
+  return arr
 
 def main():
     """
@@ -42,7 +43,7 @@ def main():
     aleatorios = [randint(0, 10000) for _ in range(10000)]  # nosec B311
 
     t_inicio = tiempo()
-    ordenados =shell_sort(aleatorios)
+    ordenados =shell_sort(aleatorios[:])
     t_final = tiempo()
 
     print("Aleatorios:", aleatorios[0:15])
