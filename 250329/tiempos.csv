@@ -5,7 +5,7 @@ Inserción,,,,,X
 Selección,,,,,X
 CocktailSort,,,,,X
 Quicksort,,,,,
-Merge sort,123ms,1423ms,17763ms,178960ms,2097518ms
+Merge sort,,,,,
 Heap sort,,,,,
 Comb sort,,,,,X
 Radix sort,,,,,X
