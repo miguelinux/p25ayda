@@ -21,16 +21,17 @@ sys.path.append(algo_dir)
 from heap_sort import heap_sort  # noqa E402
 from merge_sort import merge_sort  # noqa E402
 from radix_sort import radix_sort  # noqa E402
-from random_sort import random_sort  # noqa E402
 from selection_sort_2 import selection_sort  # noqa E402
 
+# Nunca usar este algoritmo
+# from random_sort import random_sort  # noqa E402
 
 QTY = 1_000_000
 Sub_sets = [100, 1_000, 10_000, 100_000, 1_000_000]
 
 results = []
 # algorithms=[CocktailSort,insercion,bubble_sort]
-algorithms = [selection_sort, merge_sort, heap_sort, radix_sort, random_sort]
+algorithms = [selection_sort, merge_sort, heap_sort, radix_sort]
 
 
 if __name__ == "__main__":
