@@ -1,0 +1,13 @@
+Nombre:,,,,,,
+Método,100,1_000,10_000,100_000,1_000_000
+Burbuja,,,,,X
+Inserción,,,,,X
+Selección,,,,,X
+CocktailSort,,,,,X
+Quicksort,,,,,
+Merge sort,,,,,
+Heap sort,,,,,
+Comb sort,,,,,X
+Radix sort,,,,,X
+Shell sort,,,,,
+Random sort,,X,X,X,X
